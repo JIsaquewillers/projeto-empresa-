@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*barra nav*/
+nav{
+    width: 300px;
+    height: 703px;
+    background-color: darkblue;
+    display: block;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    font-size: 30px;
+    margin-top: 30px;
+}
+h1{
+    margin-left: 350px;
+}
+
+/*MAIN*/
+#resumo{
+    margin-left: 350px;
+}
+div{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black ;
+    border-radius: 20px;
+    display: block;
+    float: left;
+    margin-top: 60px;
+    margin-left: 50px;
+    text-align: center;
+
+}
