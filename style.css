@@ -8,24 +8,42 @@
 nav{
     width: 300px;
     height: 703px;
-    background-color: darkblue;
+    background-color:#001B34;
     display: block;
     float: left;
 }
-nav a {
-    text-decoration: none;
+nav #usuario{
+    background-color: blue;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: none;
+}
+nav a {
+    display: block;
+    width: 220px;     
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav li:hover{
+    background-color:#0065CE;
+    border-radius: 20px;
 }
 nav ul{
-    gap: 80px;
+    list-style: none;
     display: flex;
     flex-direction: column;
-    list-style: none;
-    align-items: center;
+    margin: 0;
+    gap: 20px;
+    padding: 20px;
 }
 nav ul li{
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: 22px;
 }
 h1{
     margin-left: 350px;
@@ -38,12 +56,20 @@ h1{
 div{
     width: 300px;
     height: 200px;
-    border: 1px solid black ;
     border-radius: 20px;
     display: block;
     float: left;
     margin-top: 60px;
     margin-left: 50px;
     text-align: center;
-
+    box-shadow: 2px 2px 2px 2px#888888;
+}
+div p{
+    margin-top: 20px;
+    color: #888888;
+}
+.dados{
+    font-size: 40px;
+    margin-top: 60px;
+    color: #0065CE;
 }
