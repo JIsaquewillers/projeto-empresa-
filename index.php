@@ -73,11 +73,11 @@
             </div>
             <div>
                 <p>Maior Preço</p>
-                <p  class="dados"><?= $maiorPreco ["maior_preco"]?></p>
+                <p  class="dados">R$<?= $maiorPreco ["maior_preco"]?>,00</p>
             </div>
             <div>
                 <p>Maior Salário</p>
-                <p  class="dados"><?= $maiorSalario["maior_salario"] ?></p>
+                <p  class="dados">R$<?= $maiorSalario["maior_salario"] ?>,00</p>
             </div>
         </main>
         

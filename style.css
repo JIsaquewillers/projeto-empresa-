@@ -48,6 +48,10 @@ nav ul li{
 h1{
     margin-left: 350px;
 }
+#resumo{
+    color: #888888;
+    margin-top: 20px;
+}
 
 /*MAIN*/
 #resumo{
@@ -72,4 +76,17 @@ div p{
     font-size: 40px;
     margin-top: 60px;
     color: #0065CE;
+}
+table{
+    border: 1px solid black;
+    width: 800px;
+    align-items: center; 
+    margin-left: 400px;  
+    margin-top: 20px;
+}
+tr{
+    border: 1px solid black;
+}
+td{
+    border:1px solid black
 }
