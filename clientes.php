@@ -1,3 +1,23 @@
+<?php
+include  "conexao.php";
+
+$sql = "SELECT 
+        ClienteID,
+        Nome,
+        Telefone,
+        Email,
+        Endereco,
+        CNPJ,
+        Estado,
+        Cidade,
+        Empresa FROM clientes 
+        ORDER BY Empresa ASC";
+
+        $resultado = mysqli_query($conexao, $sql);
+?>
+
+ 
+ 
  <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -19,7 +39,32 @@
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-            
+            <h1>Clientes</h1>
+<table id="tabelaClientes">
+                <tr>
+                    <td class="azul">ID</td>
+                    <td class="azul">Empresa</td>
+                    <td class="azul">Contato</td>
+                    <td class="azul">E-mail</td>
+                    <td class="azul">Telefone</td>
+                    <td class="azul">Cidade</td>
+                    <td class="azul">UF</td>
+                </tr>
+                <?php while( $cliente = mysqli_fetch_assoc($resultado)):?>
+<tr>
+     <td ><?php echo($cliente["ClienteID"]) ?></td>
+    <td><?php echo($cliente["Empresa"]) ?></td>
+    <td><?php echo($cliente["Nome"]) ?></td>
+    <td><?php echo($cliente["Email"]) ?></td>
+    <td><?php echo($cliente["Telefone"]) ?></td>
+    <td><?php echo($cliente["Cidade"]) ?></td>
+    <td><?php echo($cliente["Estado"]) ?></td>
+   
+</tr>
+<?php endwhile; ?>
+</table>
+
+
         </main>
         
     </body>

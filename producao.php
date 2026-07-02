@@ -1,4 +1,18 @@
- <!DOCTYPE html>
+<?php
+$sql = "SELECT 
+        ProducaoID,
+        ProdutoID,
+        FuncionárioID,
+        ClienteID,
+        DataProducao,
+        DataEntrega
+        FROM Producao"
+
+
+?>
+
+
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,6 +34,28 @@
             </ul>
             </nav>
             
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <?php while($producao = mysqli_fetch_assoc($resultado)):?>
+    <td>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </td>
+
+    <?php endwhile;?>
+</table>
+
         </main>
         
     </body>

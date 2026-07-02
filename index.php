@@ -1,18 +1,5 @@
     <?php
-
-    $servidor = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $banco = "empresa67";
-
-    $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
-
-    if (!$conexao) {
-        die("Erro ao conectar ao banco de dados.");
-    }
-
-    mysqli_set_charset($conexao, "utf8");
-    //////////////////////////////////////////////////////////////////
+    include  "conexao.php";
 
     $sqlProdutos = "SELECT COUNT(*) AS total FROM produtos";
     $resultProdutos = mysqli_query($conexao, $sqlProdutos);
@@ -35,7 +22,7 @@
     $maiorSalario = mysqli_fetch_assoc($resultMaiorSalario);
     ?>
 
-
+    
     <!DOCTYPE html>
     <html lang="en">
     <head>

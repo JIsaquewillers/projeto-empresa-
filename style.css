@@ -82,11 +82,23 @@ table{
     width: 800px;
     align-items: center; 
     margin-left: 400px;  
-    margin-top: 20px;
+    margin-top: 20px; 
+     border-collapse: collapse; 
 }
-tr{
-    border: 1px solid black;
+#tabela{
+    overflow-y: scroll;
+    width: 1500px;
+    height: 600px;
+
 }
 td{
-    border:1px solid black
+    border:1px solid rgb(160, 160, 160);
+}
+.azul{
+    background-color: #001B34;
+    color: white;
+}
+#tabelaClientes{
+    width: 1500px;
+    height: 400px;
 }
