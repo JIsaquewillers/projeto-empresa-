@@ -41,8 +41,7 @@
             </ul>
             </nav>
             <h1>Funcionários</h1>
-            <div id="tabela">
-            <table>
+            <table id="tabela-funcionarios">
                 <tr>
                     <td class="azul">Nome</td>
                     <td class="azul">Email</td>
@@ -62,7 +61,7 @@
                 </tr>
                 <?php endwhile; ?>
             </table>
-            </div>
+
         </main>
         
     </body>

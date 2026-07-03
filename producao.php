@@ -1,14 +1,15 @@
 <?php
+include "conexao.php";
 $sql = "SELECT 
-        ProducaoID,
-        ProdutoID,
-        FuncionárioID,
-        ClienteID,
-        DataProducao,
-        DataEntrega
-        FROM Producao"
-
-
+        producao.ProducaoID,
+        produtos.Nome AS Produto,
+        funcionarios.Nome AS Funcionario,
+        clientes.Empresa AS Cliente, 
+        producao.DataProducao,
+        producao.DataEntrega FROM producao INNER JOIN produtos ON producao.ProdutoID = produtos.ProdutoID
+        INNER JOIN funcionarios ON producao.FuncionarioID = funcionarios.FuncionarioID 
+        INNER JOIN clientes ON producao.ClienteID = clientes.ClienteID ORDER BY producao.DataProducao DESC";
+        $resultado = mysqli_query($conexao, $sql);
 ?>
 
 
@@ -33,26 +34,26 @@ $sql = "SELECT
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-            
+       
 <table>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>ID</td>
+        <td>Produto</td>
+        <td>Funcionários</td>
+        <td>Cliente</td>
+        <td>Produção</td>
+        <td>Entrega</td>
+        <td>Status</td>
     </tr>
-    <?php while($producao = mysqli_fetch_assoc($resultado)):?>
-    <td>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-    </td>
-
+         <?php while($producao = mysqli_fetch_assoc($resultado)):?>
+    <tr>
+        <td> <?php echo $producao["ProducaoID"]?></td>
+        <td><?php echo $producao["Produto"]?></td>
+        <td><?php echo $producao["Funcionario"]?></td>
+        <td><?php echo $producao["Cliente"]?></td>
+        <td><?php echo $producao["DataProducao"]?></td>
+        <td><?php echo $producao["DataEntrega"]?></td>
+    </tr>
     <?php endwhile;?>
 </table>
 

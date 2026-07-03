@@ -85,12 +85,6 @@ table{
     margin-top: 20px; 
      border-collapse: collapse; 
 }
-#tabela{
-    overflow-y: scroll;
-    width: 1500px;
-    height: 600px;
-
-}
 td{
     border:1px solid rgb(160, 160, 160);
 }
@@ -99,6 +93,10 @@ td{
     color: white;
 }
 #tabelaClientes{
-    width: 1500px;
+    width: 1000px;
     height: 400px;
+margin-left: 2px;
+}
+#tabela-funcionarios{
+    margin-left: 10px;
 }

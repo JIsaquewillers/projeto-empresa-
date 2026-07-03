@@ -1,3 +1,21 @@
+ <?php
+
+ include ="conexao.php";
+ 
+ $sql = "SELECT
+        produtos.ProdutoID,
+        produtos.Nome AS Produto,
+        produtos.Preco,
+        produtos.Referencia,
+        produtos.Peso,
+        categorias.Nome AS Categoria
+        FROM Produtos
+        INNER JOIN categorias ON produtos.CategoriaID = categorias.CateoriaID
+        WHERE produtos.Nome LIKE '%$busca%'
+        ORDER BY produtos.Nome ASC";
+ $resultado = mysqli_query($conexao, $sql);
+ ?>
+ 
  <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -21,6 +39,10 @@
             </nav>
         
             <h1>Produtos</h1>
+            <?php while($produto = mysqli_fetch_assoc($resultado)) ?>
+            <div></div>
+
+            <?php endwhile?>
         </main>
         
     </body>
