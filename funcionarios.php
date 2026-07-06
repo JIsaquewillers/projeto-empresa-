@@ -40,7 +40,7 @@
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-            <h1>Funcionários</h1>
+            <h1 class="titulo">Funcionários</h1>
             <table id="tabela-funcionarios">
                 <tr>
                     <td class="azul">Nome</td>

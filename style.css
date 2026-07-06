@@ -7,7 +7,7 @@
 /*barra nav*/
 nav{
     width: 300px;
-    height: 703px;
+    height: 1200px;
     background-color:#001B34;
     display: block;
     float: left;
@@ -45,17 +45,15 @@ nav ul{
 nav ul li{
     font-size: 22px;
 }
-h1{
-    margin-left: 350px;
-}
-#resumo{
-    color: #888888;
-    margin-top: 20px;
-}
 
 /*MAIN*/
+.main{
+    overflow-y: auto;
+}
 #resumo{
     margin-left: 350px;
+    color: #888888;
+    margin-top: 20px;
 }
 div{
     width: 300px;
@@ -79,11 +77,11 @@ div p{
 }
 table{
     border: 1px solid black;
-    width: 800px;
     align-items: center; 
     margin-left: 400px;  
     margin-top: 20px; 
-     border-collapse: collapse; 
+    border-collapse: collapse; 
+    width: 1400px;
 }
 td{
     border:1px solid rgb(160, 160, 160);
@@ -92,11 +90,8 @@ td{
     background-color: #001B34;
     color: white;
 }
-#tabelaClientes{
-    width: 1000px;
-    height: 400px;
-margin-left: 2px;
+.titulo{
+    margin-left: 350px;
 }
-#tabela-funcionarios{
-    margin-left: 10px;
-}
+
+

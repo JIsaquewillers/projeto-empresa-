@@ -1,7 +1,9 @@
  <?php
-
- include ="conexao.php";
- 
+ include "conexao.php";
+ $busca = "";
+ if(isset($_GET["busca"])){
+    $busca = $_GET["busca"];
+ }
  $sql = "SELECT
         produtos.ProdutoID,
         produtos.Nome AS Produto,
@@ -10,7 +12,7 @@
         produtos.Peso,
         categorias.Nome AS Categoria
         FROM Produtos
-        INNER JOIN categorias ON produtos.CategoriaID = categorias.CateoriaID
+        INNER JOIN categorias ON produtos.CategoriaID = categorias.CategoriaID
         WHERE produtos.Nome LIKE '%$busca%'
         ORDER BY produtos.Nome ASC";
  $resultado = mysqli_query($conexao, $sql);
@@ -37,12 +39,17 @@
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-        
-            <h1>Produtos</h1>
-            <?php while($produto = mysqli_fetch_assoc($resultado)) ?>
-            <div></div>
+            <h1 class="titulo">Produtos</h1>
 
-            <?php endwhile?>
+
+            <?php while($produto = mysqli_fetch_assoc($resultado)) { ?>
+            <div class="container">
+                <span ><?php echo $produto["Categoria"]?></span>
+                <h1 class="produto"><?php echo $produto["Produto"]?></h1>
+                <span><?php echo $produto["Preco"]?></span>
+                <a href="verMais.php">Ver mais</a>
+            </div>
+            <?php } ?>
         </main>
         
     </body>

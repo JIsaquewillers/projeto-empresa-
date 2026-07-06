@@ -34,16 +34,17 @@ $sql = "SELECT
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
+            <h1 class="titulo">Produção</h1>
        
 <table>
     <tr>
-        <td>ID</td>
-        <td>Produto</td>
-        <td>Funcionários</td>
-        <td>Cliente</td>
-        <td>Produção</td>
-        <td>Entrega</td>
-        <td>Status</td>
+        <td class="azul">ID</td>
+        <td class="azul">Produto</td>
+        <td class="azul">Funcionários</td>
+        <td class="azul">Cliente</td>
+        <td class="azul">Produção</td>
+        <td class="azul">Entrega</td>
+        <td class="azul">Status</td>
     </tr>
          <?php while($producao = mysqli_fetch_assoc($resultado)):?>
     <tr>

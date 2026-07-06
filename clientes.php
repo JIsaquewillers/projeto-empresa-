@@ -39,7 +39,7 @@ $sql = "SELECT
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-            <h1>Clientes</h1>
+            <h1  class="titulo">Clientes</h1>
 <table id="tabelaClientes">
                 <tr>
                     <td class="azul">ID</td>

@@ -44,7 +44,7 @@
                 <li><a href="producao.php">Produção</a></li>
             </ul>
             </nav>
-            <h1>Painel Empresarial</h1>
+            <h1 class="titulo">Painel Empresarial</h1>
             <p id="resumo">Resumo geral das consultas</p>
             <div>
                 <p>Produtos</p>
