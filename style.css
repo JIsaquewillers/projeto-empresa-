@@ -22,6 +22,8 @@ nav #usuario{
     font-weight: bold;
     font-size: 30px;
     box-shadow: none;
+    border-radius: 20px;
+    text-align: center;
 }
 nav a {
     display: block;
@@ -55,7 +57,7 @@ nav ul li{
     color: #888888;
     margin-top: 20px;
 }
-div{
+#painel{
     width: 300px;
     height: 200px;
     border-radius: 20px;
@@ -64,11 +66,41 @@ div{
     margin-top: 60px;
     margin-left: 50px;
     text-align: center;
-    box-shadow: 2px 2px 2px 2px#888888;
+    box-shadow: 2px 2px 2px 2px#888888; 
 }
-div p{
-    margin-top: 20px;
-    color: #888888;
+
+#quadrado{
+    width: 300px;
+    min-height: 200px;
+    border-radius: 20px;
+    margin: 60px 0 0 50px;
+    padding: 20px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+     box-shadow: 2px 2px 2px 2px#888888;
+     border: 2px solid black;
+}
+
+#quadrado h1{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+#quadrado p{
+    font-size: 20px;
+    margin: 8px 30px;
+}
+
+#quadrado a{
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    color: #0065CE;
+    font-weight: bold;
 }
 .dados{
     font-size: 40px;
@@ -90,8 +122,50 @@ td{
     background-color: #001B34;
     color: white;
 }
+.azul2{
+ color: #0065CE;   
+}
 .titulo{
     margin-left: 350px;
 }
+#card{
+    width: 900px;
+    min-height: 600px;
+    margin-left: 350px; 
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    overflow: hidden;
+     box-shadow: 2px 2px 2px 2px#888888;
+}
+
+#img{
+    width: 250px;
+    height: 250px;
+    background: aqua;
+    float: left;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+#card h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+#card p{
+    font-size: 20px;
+    margin: 8px 30px;
+}
+
+#card a{
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    color: #0065CE;
+    font-weight: bold;
+}
+
+
 
 

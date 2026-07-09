@@ -29,14 +29,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=1">
     </head>
     <body>
         <main>
             <nav>
                 
             <ul>
-                <div id="usuario">JI</div>
+                <div id="usuario" >JI</div>
                 <li><a href="index.php">Dashbord</a></li>
                 <li><a href="produtos.php">Produtos</a></li>
                 <li><a href="funcionarios.php">Funcionários</a></li>
@@ -46,23 +46,23 @@
             </nav>
             <h1 class="titulo">Painel Empresarial</h1>
             <p id="resumo">Resumo geral das consultas</p>
-            <div>
+            <div id="painel">
                 <p>Produtos</p>
                 <p  class="dados"><?= $totalProdutos["total"] ?></p>
             </div>
-            <div>
+            <div id="painel">
                 <p>Funcionários</p>
                 <p  class="dados"><?= $totalFuncionarios["total"] ?></p>
             </div>
-            <div>
+            <div id="painel">
                 <p>Clientes</p>
                 <p  class="dados"><?= $totalClientes["total"] ?></p>
             </div>
-            <div>
+            <div id="painel">
                 <p>Maior Preço</p>
                 <p  class="dados">R$<?= $maiorPreco ["maior_preco"]?>,00</p>
             </div>
-            <div>
+            <div id="painel">
                 <p>Maior Salário</p>
                 <p  class="dados">R$<?= $maiorSalario["maior_salario"] ?>,00</p>
             </div>

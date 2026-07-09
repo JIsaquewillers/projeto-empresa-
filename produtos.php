@@ -24,7 +24,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=1">
     </head>
     <body>
         <main>
@@ -43,11 +43,13 @@
 
 
             <?php while($produto = mysqli_fetch_assoc($resultado)) { ?>
-            <div class="container">
+            <div id="quadrado">
+                <h1 class="azul2"><?php echo $produto["Produto"]?></h1>
                 <span ><?php echo $produto["Categoria"]?></span>
-                <h1 class="produto"><?php echo $produto["Produto"]?></h1>
-                <span><?php echo $produto["Preco"]?></span>
-                <a href="verMais.php">Ver mais</a>
+                <span>R$<?php echo  $produto["Preco"]?></span>
+                <a class="verMais" href="verMais.php?id=<?php echo $produto["ProdutoID"]; ?>">
+    Ver mais
+</a>
             </div>
             <?php } ?>
         </main>
