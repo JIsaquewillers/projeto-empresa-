@@ -40,10 +40,8 @@
             </ul>
             </nav>
             <h1 class="titulo">Produtos</h1>
-
-
             <?php while($produto = mysqli_fetch_assoc($resultado)) { ?>
-            <div id="quadrado">
+            <div class="quadrado">
                 <h1 class="azul2"><?php echo $produto["Produto"]?></h1>
                 <span ><?php echo $produto["Categoria"]?></span>
                 <span>R$<?php echo  $produto["Preco"]?></span>

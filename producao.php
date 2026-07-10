@@ -54,6 +54,15 @@ $sql = "SELECT
         <td><?php echo $producao["Cliente"]?></td>
         <td><?php echo $producao["DataProducao"]?></td>
         <td><?php echo $producao["DataEntrega"]?></td>
+        <td> <?php
+    if ($producao["DataEntrega"] == null) {
+        echo "Em aberto";
+    } else {
+        echo "Concluída";
+    }
+    ?>
+</td>
+        </td>
     </tr>
     <?php endwhile;?>
 </table>

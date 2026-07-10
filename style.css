@@ -3,14 +3,23 @@
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+main{
+     overflow-y: auto;
+    margin-left: 300px;
+    padding: 20px;
+    overflow: hidden;
+}
 
 /*barra nav*/
 nav{
     width: 300px;
-    height: 1200px;
     background-color:#001B34;
     display: block;
     float: left;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 nav #usuario{
     background-color: blue;
@@ -53,7 +62,7 @@ nav ul li{
     overflow-y: auto;
 }
 #resumo{
-    margin-left: 350px;
+    margin-left: 50px;
     color: #888888;
     margin-top: 20px;
 }
@@ -63,17 +72,16 @@ nav ul li{
     border-radius: 20px;
     display: block;
     float: left;
-    margin-top: 60px;
-    margin-left: 50px;
     text-align: center;
     box-shadow: 2px 2px 2px 2px#888888; 
+    margin: 15px;
 }
 
-#quadrado{
+.quadrado{
     width: 300px;
     min-height: 200px;
     border-radius: 20px;
-    margin: 60px 0 0 50px;
+    margin: 30px;
     padding: 20px;
     float: left;
     display: flex;
@@ -81,8 +89,8 @@ nav ul li{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-     box-shadow: 2px 2px 2px 2px#888888;
-     border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border: 2px solid black;
 }
 
 #quadrado h1{
@@ -102,6 +110,7 @@ nav ul li{
     color: #0065CE;
     font-weight: bold;
 }
+
 .dados{
     font-size: 40px;
     margin-top: 60px;
@@ -109,11 +118,10 @@ nav ul li{
 }
 table{
     border: 1px solid black;
-    align-items: center; 
-    margin-left: 400px;  
+    align-items: center;
     margin-top: 20px; 
     border-collapse: collapse; 
-    width: 1400px;
+    width: 1000px;
 }
 td{
     border:1px solid rgb(160, 160, 160);
@@ -126,17 +134,16 @@ td{
  color: #0065CE;   
 }
 .titulo{
-    margin-left: 350px;
+    margin-left: 50px;
 }
 #card{
     width: 900px;
     min-height: 600px;
-    margin-left: 350px; 
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,.2);
     overflow: hidden;
-     box-shadow: 2px 2px 2px 2px#888888;
+    box-shadow: 2px 2px 2px 2px#888888;
 }
 
 #img{
